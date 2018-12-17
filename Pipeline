@@ -21,7 +21,7 @@ pipeline {
     }
       stage('Build') {
         steps {
-        sh 'mvn package'
+        sh 'mvn clean package'
         sh 'echo $USER'
         sh 'echo whoami'
         sh 'echo $MYJOB'
